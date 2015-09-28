@@ -6,6 +6,22 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
+<nav>
+  <a href="/">Home</a>
+
+  <% if logged_in? %>
+    <%= link_to "Profile", current_user %>
+    <%= link_to "Logout", logout_path, method: "delete" %>
+  <%else %>
+    <%= link_to "Log in", login_path %>
+  <% end %>
+
+
+
+
+</nav>
+
 <body>
 
 <%= yield %>
