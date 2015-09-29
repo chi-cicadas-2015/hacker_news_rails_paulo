@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy'
 
   resources :posts
+  resources :comments # this is a nested route
+  
+
   resources :users
 
 

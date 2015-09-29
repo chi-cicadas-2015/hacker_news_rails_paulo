@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 
   def new
+    @post = Post.new
     if logged_in? # only allows logged in users to create a post
       render 'new'
     else
