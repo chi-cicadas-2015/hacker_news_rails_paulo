@@ -1,3 +1,17 @@
 <p>
-  This is the show page for an article
+
+</p>
+
+<p>
+  <%= link_to "All Posts", root_path %>
+</p>
+
+<h3>Title</h3>
+<p>
+  <%= @post.title %>, by <%= @author.email %>
+</p>
+
+<h3>Text</h3>
+<p>
+  <%= @post.text%>
 </p>

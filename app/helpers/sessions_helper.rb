@@ -17,4 +17,12 @@ module SessionsHelper
     @current_user = nil
   end
 
+  def can_edit?(post)
+    if current_user
+      current_user.id == post.user_id
+    else
+      nil
+    end
+  end
+
 end
