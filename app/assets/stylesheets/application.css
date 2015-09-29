@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.post_container, .comments_container{
+  border: 1px solid black;
+}

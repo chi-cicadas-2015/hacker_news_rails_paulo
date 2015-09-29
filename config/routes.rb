@@ -10,9 +10,9 @@ Rails.application.routes.draw do
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
 
-  resources :posts
-  resources :comments # this is a nested route
-  
+  resources :posts do
+    resources :comments # this is a nested route
+  end
 
   resources :users
 

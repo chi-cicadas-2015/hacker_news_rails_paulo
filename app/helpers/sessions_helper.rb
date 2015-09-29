@@ -17,9 +17,9 @@ module SessionsHelper
     @current_user = nil
   end
 
-  def can_edit?(post)
+  def can_edit?(resource)
     if current_user
-      current_user.id == post.user_id
+      current_user.id == resource.user_id
     else
       nil
     end
