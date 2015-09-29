@@ -1,28 +1,12 @@
-== README
+This is hosted at:
+https://nameless-temple-9629.herokuapp.com/login
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a crud that allows users to create and comment on posts.
 
-Things you may want to cover:
+I'm happy with the result for the user authentication and authorization.
 
-* Ruby version
+Helper methods rock.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Ice box:
+  - voting
+  - admin status
